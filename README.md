@@ -1,4 +1,4 @@
-# Human Activity Recognition
+# IMAGE SEARCH APP
 
 
 
@@ -7,7 +7,7 @@ This project is about using Deep Learning algorithms in order to build an AI sof
 We used this [paper](https://arxiv.org/pdf/1411.4389.pdf) as an inspiration.
 ### Technologies / Frameworks used 
 * ![Static Badge](https://img.shields.io/badge/Python-3.8-green)
-* ![Static Badge](https://img.shields.io/badge/opencv-4.8-green)
+* ![Static Badge](https://img.shields.io/badge/Pinecone-2.2-green)
 * ![Static Badge](https://img.shields.io/badge/keras-2.13-green)
 
 ## Project Description

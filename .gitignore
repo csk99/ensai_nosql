@@ -1,5 +1,5 @@
 imagesearch/*
-*.txt
+read_me.txt
 test.py
 utility/__pycache__
 __pycache__
