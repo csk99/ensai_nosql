@@ -74,9 +74,9 @@ pip install -r requirements.txt
 ```
 6. Launch the image insertion script using the following
 ```
-python3 insert_data.py -key <APY_KEY>  -env <ENV>  -metric <METRIC> 
+python insert_data.py -key <APY_KEY>  -env <ENV>  -metric <METRIC> 
 ```
-*Replace <ENV> and <APY_KEY> with the values you get from your pinecone account.
+*Replace \<ENV> and <APY_KEY> with the values you get from your pinecone account.*
 *Wait for the script to be done.*
 7. Launch the app using the following 
 ```
