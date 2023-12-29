@@ -30,21 +30,13 @@ In summary, in this study we will like to answer the following question:
 * ![Static Badge](https://img.shields.io/badge/keras-2.13-green)
 
 ## Project Description
-We have use a subset (10 actions) of [UCF101](https://www.crcv.ucf.edu/data/UCF101.php). Our computer vision model has been trained to be  able to recognize the following action:
-* ApplyEyeMakeup       
-* BabyCrawling         
-* Biking               
-* Billiards            
-* BrushingTeeth        
-* PizzaTossing         
-* PushUps              
-* Swing                
-* TrampolineJumping    
-* Typing
+For this project, we've used the Cifar-10. It's  is a freely available dataset comprising **60,000** color images, each measuring **32x32 pixels**. These images belong to **10** distinct categories: Airplane, Automobile, Bird, Cat, Deer, Dog, Frog, Horse, Ship, and Truck. To obtain their corresponding embeddings, we applied a pre-trained CNN model, specifically **[VGG-16](https://medium.com/@mygreatlearning/everything-you-need-to-know-about-vgg16-7315defb5918)**, to extract essential features. The resulting vector is **512-dimensional**. Within Pinecone, we created an index named "images" with a dimension of 512, where all these vectors will be stored.
 
+
+THe idea behind this project is to find if similar images of Birds for example have similar embeddings. To do so,we've uploaded 50,000 out of the total 60,000 images associated embedding to a pinecone index . This partition was made to ensure that we have entirely new and distinct images compared to those already stored as vectors in Pinecone. Also note that this paritioning is already done by the cifar-10 dataset into train and test batches representing the serialized versions of the original images.
 
 ## Working principle
-The following pictures explains how our models takes in raw video data and output its associated activity or action label.
+The picutre below describe the whole process of storing the embeddings to a pinecone index. From the first step of reading the images, applying a pre-trained VGG16 neural network to generate 512 dimensional embbedings which are then upserted (ie stored) in a pinecone index. 
 <img src="architecture.png" alt="principle">
 
 ## Running time
