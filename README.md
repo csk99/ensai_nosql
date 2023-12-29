@@ -45,7 +45,7 @@ We have use a subset (10 actions) of [UCF101](https://www.crcv.ucf.edu/data/UCF1
 
 ## Working principle
 The following pictures explains how our models takes in raw video data and output its associated activity or action label.
-<img src="principle.png" alt="principle">
+<img src="architecture.png" alt="principle">
 
 ## Running time
 In this project, we are handling videos, which pose some challenges in terms of compution especially when reading videos, capturing frames and extracting features via a CNN.
@@ -57,15 +57,13 @@ We tried to leverage the power of parrallel computing when running our code so t
 
 
 ## Getting Started
-
-1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
-2. You can download raw data from here Raw Data is being kept [here](https://www.crcv.ucf.edu/data/UCF101/UCF101.rar) .
-
-    *Choose the activities videos folders you're interested in (or everything) and put them inside the dataset folder*
-    *Note: Be aware that the whole dataset of UCF is about 6.5Go*
+1. Create a pinecone account for free [here](https://www.pinecone.io/)
+2. Get the api key and environement associated to your pinecone account 
+3. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
     
-3. Create a virtual env in the project folder (for help see this [tutorial](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/))
-4. Run the following command to install the necessary packages
+4. Create a virtual env in the project folder (for help see this [tutorial](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/))
+
+5. Run the following command to install the necessary packages
 * For linux users:
 ```
 pip3 install -r requirements.txt
@@ -74,10 +72,17 @@ pip3 install -r requirements.txt
 ```
 pip install -r requirements.txt
 ```
+6. Launch the image insertion script using the following
+```
+python3 insert_data.py -key <APY_KEY>  -env <ENV>  -metric <METRIC> 
+```
+*Replace <ENV> and <APY_KEY> with the values you get from your pinecone account.
+*Wait for the script to be done.*
+7. Launch the app using the following 
+```
+streamlit run app.py -- -key <APY_KEY> -env <ENV>
+```
 
-
-5. Open the Har.ipynb notebook and run the cells.<br> 
-*Please choose the python virtual environment you created previously*
 
 
 
