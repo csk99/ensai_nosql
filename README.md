@@ -61,7 +61,7 @@ We tried to leverage the power of parrallel computing when running our code so t
 2. Get the api key and environement associated to your pinecone account 
 3. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
     
-4. Create a virtual env in the project folder (for help see this [tutorial](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/))
+4. Create a virtual environment in the project folder (for help see this [tutorial](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/))
 
 5. Run the following command to install the necessary packages
 * For linux users:
