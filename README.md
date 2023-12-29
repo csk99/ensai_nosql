@@ -3,7 +3,7 @@
 
 
 ## Project Intro
-<p> The advent of the internet revolutionized the way we access information through potent search engines such as Google, Bing, and Yandex. With just a few keywords, we can swiftly locate web pages pertinent to our queries. As technology, particularly AI, advances, many search engines now facilitate online image searches.
+The advent of the internet revolutionized the way we access information through potent search engines such as Google, Bing, and Yandex. With just a few keywords, we can swiftly locate web pages pertinent to our queries. As technology, particularly AI, advances, many search engines now facilitate online image searches.
 
 Various techniques for image searching have emerged, including:
 
@@ -23,7 +23,7 @@ The CNN output typically represents a condensed, relevant representation of the 
 
 In summary, in this study we will like to answer the following question:
 **Are two similar images associated embedding are still similar?**
-</p> 
+
 ### Technologies / Frameworks used 
 * ![Static Badge](https://img.shields.io/badge/Python-3.8-green)
 * ![Static Badge](https://img.shields.io/badge/Pinecone-2.2-green)
