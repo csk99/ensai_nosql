@@ -6,23 +6,23 @@
 The advent of the internet revolutionized the way we access information through potent search engines such as Google, Bing, and Yandex. With just a few keywords, we can swiftly locate web pages pertinent to our queries. As technology, particularly AI, advances, many search engines now facilitate online image searches.
 
 Various techniques for image searching have emerged, including:
-\begin{itemize}
-\item \textbf{image search by metadata}:
-Here, the search is  not based on the image itself but rather on the metadata following the image like (keywords, text, filename,date etc.)
-\item \textbf{image search based on image content}:
-This approach uses, state of the art computer vision techniques to extract shape, colour, any relevant features from an image. This is the technique we are going to study.
-\end{itemize}
 
-In this project, we will use a pre-trained Convolutional Neural Network (CNN) to extract valuable features from the images. This methodology, a key component of content-based image search, provides the following benefits:
-\begin{itemize}
-\item  \textbf{CNN are robust}:
+* image search by metadata:
+Here, the search is  not based on the image itself but rather on the metadata following the image like (keywords, text, filename,date etc.) <br> 
+* image search based on image content:
+This approach uses, state of the art computer vision techniques to extract shape, colour, any relevant features from an image. This is the technique we are going to study.
+
+
+In this project, we will use a pre-trained Convolutional Neural Network (CNN) to extract valuable features from the images. This methodology, a key component of content-based image search, provides the following benefits:<br> 
+
+* CNN are robust:
 CNN have proven to be very powerful to extract key features from an image.
-\item \textbf{CNN can reduce dimension}:
-The CNN output typically represents a condensed, relevant representation of the image often called \textbf{feature map or embedding or vectors}, as not every pixel holds significant information. This condensed representation often has smaller dimensions.
-\end{itemize}
+* CNN can reduce dimension:
+The CNN output typically represents a condensed, relevant representation of the image often called **feature map or embedding or vectors**, as not every pixel holds significant information. This condensed representation often has smaller dimensions.
+
 
 In summary, in this study we will like to answer the following question:
-\textbf{Are two similar images associated embedding are still similar?}
+**Are two similar images associated embedding are still similar?**
 ### Technologies / Frameworks used 
 * ![Static Badge](https://img.shields.io/badge/Python-3.8-green)
 * ![Static Badge](https://img.shields.io/badge/Pinecone-2.2-green)
