@@ -92,17 +92,6 @@ def process_file(file: str, index:str,feature_extractor: keras.Model=feature_ext
             {"label": classes_dict[data[b'labels'][i]]})
             ,list(range(data[b'data'].shape[0])))
                      )
-        
-
-    """vectors = []   
-    for i in tqdm(range(data[b'data'].shape[0])):
-        vectors.append(
-            (
-                'batch_' + str(data[b'batch_label'])[-7] + '_' + str(i),
-                images_features[i],
-                {"label": classes_dict[data[b'labels'][i]]}
-            )
-        )"""
 
     index = pinecone.Index(index)
     index.upsert(vectors=vectors, batch_size=200)

@@ -10,7 +10,7 @@ Various techniques for image searching have emerged, including:
 * image search by metadata:
 Here, the search is  not based on the image itself but rather on the metadata following the image like (keywords, text, filename,date etc.) <br> 
 * image search based on image content:
-This approach uses, state of the art computer vision techniques to extract shape, colour, any relevant features from an image. This is the technique we are going to study.
+This approach uses, state of the art computer vision techniques to extract shape, colour, any relevant features from an image. This is the technique we are going to use.
 
 
 In this project, we will use a pre-trained Convolutional Neural Network (CNN) to extract valuable features from the images. This methodology, a key component of content-based image search, provides the following benefits:<br> 
@@ -42,7 +42,7 @@ The picutre below describe the whole process of storing the embeddings to a pine
 
 
 ## Running time
-In this project, we are handling videos, which pose some challenges in terms of compution especially when reading videos, capturing frames and extracting features via a CNN.
+In this project, we are handling 50 thousand images, which pose some challenges in terms of compution especially when reading images, unpickle (we've downlaoded the CIFAR-10 dataset serialized version) them and extracting features via a CNN.
 We tried to leverage the power of parrallel computing when running our code so that everything runs as fast as possible on multiple  CPU cores via multithreading.<br> 
 *Note: If possible, run this project on a GPU powered environment for faster computations.*
 
